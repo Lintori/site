@@ -1,0 +1,33 @@
+@import "../../styles/colors.scss";
+
+.container {
+   width: 100%;
+   height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @media screen and (max-width: 800px) {
+      flex-direction: column;
+   }
+}
+
+.icon {
+   width: 70px;
+   height: 70px;
+
+   margin: .5rem;
+
+   background-color: rgba(white, .25);
+   border-radius: 50%;
+
+   display: grid;
+   place-items: center;
+
+   transition: .2s;
+
+   &:hover {
+      transform: translatey(-5px) scale(1.05);
+   }
+}
